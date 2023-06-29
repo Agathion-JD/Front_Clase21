@@ -1,0 +1,45 @@
+@import "variables";
+
+body {
+  margin: 0%;
+}
+header {
+  background-color: $backColor;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+@mixin titulos {
+  font-size: 20px;
+  color: $secondaryColor;
+  background-color: $primaryColor;
+  letter-spacing: 5px;
+}
+h1 {
+  @include titulos();
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+h2 {
+  @include titulos();
+}
+li span {
+  font-weight: bold;
+}
+dt {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $secondaryColor;
+  color: #ffffff;
+  font-size: 20px;
+
+  img {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
